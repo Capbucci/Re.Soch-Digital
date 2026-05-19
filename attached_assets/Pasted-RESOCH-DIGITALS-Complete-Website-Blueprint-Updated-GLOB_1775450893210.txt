@@ -1,0 +1,366 @@
+RESOCH DIGITALS — Complete Website Blueprint (Updated)
+GLOBAL ELEMENTS
+Navbar (Sticky Top)
+Position: Fixed at top, always visible
+Background: Transparent initially → turns solid black (#000000) with slight blur on scroll
+Left Side: Logo — "Re.Soch" in white, ".Digitals" in #FF8858
+Center: Navigation links — About | Services | Work | Contact
+Each link is white text (#FFFFFF)
+On hover: orange underline slides in from left
+On click: smooth scroll to that section
+Right Side: CTA button — "Rethink Your Strategy"
+Orange fill (#FF8858) with black text
+On hover: scales up slightly, subtle glow
+Mobile: Hamburger menu icon (three white lines) → slides down a full-screen black overlay with centered nav links and orange accents
+Animation: Fades in from top on page load (0.5s delay after hero starts)
+Footer (Bottom of Page)
+Background: Pure black (#000000) with a thin orange top border (#FF8858)
+Layout: 3-column grid on desktop, stacked on mobile
+Column 1 — Brand:
+Logo: "Re.Soch.Digitals"
+Short tagline: "Don't Just Think. Re.Soch."
+Column 2 — Contact:
+Phone: [Your Phone Number] (placeholder)
+Email: [Your Email] (placeholder)
+Both in white, clickable tel: and mailto: links
+On hover: turns orange
+Column 3 — Social:
+Four icons in a row: Instagram, LinkedIn, Twitter/X, YouTube
+White icons, turn orange on hover with a slight bounce
+Each links to # placeholder until real URLs are provided
+Bottom Bar: Centered text — "© 2026 Resoch Digitals. All rights reserved." in dim white (rgba(255,255,255,0.5))
+SECTIONS (Top to Bottom)
+SECTION 1: Hero — Video Banner
+Purpose: Cinematic first impression. A video intro plays as the background, setting an intense, creative tone before the text appears.
+
+Content
+Background Video: Full-screen looping video (<video> element)
+Muted, autoplay, loop, playsinline
+Dark overlay on top (rgba(0,0,0,0.6)) so text stays readable
+Video suggestion: Abstract creative visuals — fast cuts of design work, typing, screens, camera lenses, motion graphics, team brainstorming, or cinematic brand visuals
+Video source: A .mp4 file placed in /public/hero-intro.mp4
+Headline: "Don't Just Think. Re.Soch."
+Font: Large, bold, white
+"Re.Soch" in orange (#FF8858)
+Positioned center-left or center over the video
+Sub-headline: "Scroll-stopping strategy. Data-driven drama. We engineer digital performance that pops, clicks, and converts."
+Font: Medium, dim white (rgba(255,255,255,0.7))
+CTA Button: [Rethink Your Strategy]
+Orange background, black bold text
+Rounded corners, medium padding
+Layout
+Full viewport height (100vh)
+<video> element fills the entire background (object-fit: cover)
+Dark overlay div sits between video and text content
+Text content is vertically and horizontally centered, positioned above the overlay
+Background: Video + dark overlay replaces the particle background
+Animations
+Video: Starts playing immediately on page load (muted autoplay)
+Headline: Each word fades in and slides up sequentially with 0.15s stagger — appears over the playing video
+"Don't" → "Just" → "Think." → "Re.Soch."
+Sub-headline: Fades in 0.5s after headline finishes, slides up from below
+CTA Button: Fades in 0.3s after sub-headline, has a continuous subtle orange pulse/glow
+On Scroll: Hero content fades out and scales down slightly as user scrolls past. Video continues playing in background until scrolled out of view
+Interactions
+CTA button hover: Scales to 1.05x, glow intensifies
+CTA button click: Smooth scroll to Contact section
+Scroll indicator arrow at bottom bouncing up and down
+Fallback: If video fails to load, a solid black background with orange gradient is shown instead
+Video Implementation Details
+<video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+  <source src="/hero-intro.mp4" type="video/mp4">
+</video>
+<div class="absolute inset-0 bg-black/60"></div>
+<div class="relative z-10">
+  <!-- headline, subheadline, CTA -->
+</div>
+SECTION 2: About Us — "We Love the Delete Button"
+Purpose: Explain the brand philosophy. Show that Resoch is different from typical agencies.
+
+Content
+Headline: "We love the 'Delete' button."
+"Delete" in orange with a strikethrough animation that appears then disappears
+Body Text:
+"Why do we call ourselves Re.Soch? Because we believe the best work comes from challenging our own ideas.
+
+We research. We ideate. Then we look at the whiteboard and ask, 'Is this good, or is it just safe?' If it's safe, we kill it. We rethink the narrative, the design, and the data until we find the angle your competitors missed."
+
+Key Phrase Highlights: "kill it", "rethink", "competitors missed" — these words briefly flash orange as they scroll into view
+Layout
+Two-column on desktop: Left has the headline, right has the body text
+Single column on mobile: Stacked
+Max-width container with generous padding
+Background: Pure black
+Animations
+Section Entrance: Slides in from left as user scrolls into view
+"Delete" Strikethrough: An orange line draws through "Delete" then erases itself — visual metaphor for the delete button
+Body Text: Fades in line by line with 0.1s stagger
+Key Phrases: Each highlighted phrase pulses orange once as it enters the viewport, then returns to white
+Interactions
+No click interactions — purely scroll-driven storytelling
+SECTION 3: Process — "The Art of the Re-Think"
+Purpose: Show the difference between a standard agency and Resoch's approach.
+
+Content
+Headline: "The Art of the Re-Think."
+Two Columns Side by Side:
+Left Column — "The Standard Way" (dimmed, grayed out):
+
+Step 1: Brief
+Step 2: Template
+Step 3: Post
+Step 4: Hope
+Status badge: Boring (in dim white, crossed out with orange line)
+Right Column — "The Re.Soch Way" (bright, orange highlighted):
+
+Step 1: Brief
+Step 2: Research
+Step 3: Re-Think (orange, bold)
+Step 4: Disrupt
+Step 5: Dominate
+Status badge: Iconic (orange, pulsing)
+Layout
+Headline centered at top
+Two columns below, separated by a vertical orange divider line
+Each step is a numbered card with an arrow connecting to the next
+Background: Pure black
+Animations
+Headline: Fades in on scroll
+Left Column: Fades in dim — steps appear one by one with gray arrows
+Right Column: Fades in bright — steps appear one by one with orange arrows
+Arrows: Each arrow draws itself (line animation) connecting steps sequentially
+Status Badges: "Boring" gets an orange strikethrough drawn across it. "Iconic" pulses with orange glow
+Vertical Divider: Orange line draws from top to bottom between the two columns
+Interactions
+Hover on any step card: Card lifts slightly, orange border appears
+No click interactions
+SECTION 4: Services — Comic Character Cards
+Purpose: Showcase all 7 services with a unique comic superhero theme. This is the most visually distinctive section.
+
+Content
+Headline: "Meet the Team." (or "The Re.Soch Roster.")
+
+7 Service Cards — each card has:
+
+Character name (orange, bold)
+Character title / service name (white)
+Comic-style description (dim white)
+One-liner tagline (orange, italic)
+#	Character	Service	One-Liner
+1	The Trend-Surfer	Social Media Strategy	"Rethinking 'Content' as 'Culture'"
+2	Doctor Hypnosis	Copy & Design Production	"Rethinking 'Spend' as 'Investment'"
+3	The Reality-Warper	Visual Production	"Rethinking 'Videos' as 'Experiences'"
+4	The Shadow Operative	SEO	"Rethinking 'Search' as 'Answers'"
+5	The Cyber-Sniper	Performance Marketing	"Rethinking 'Spend' as 'Investment'"
+6	Captain Aegis	Brand Management	"Your reputation, on a strategy"
+7	—	Websites That Convert	"More than a pretty face. A 24/7 salesperson."
+Full Card Content
+Card 1 — The Trend-Surfer (Social Media Strategy)
+
+Moving faster than the speed of the algorithm, this speedster spots viral waves before they even crest across the multiverse. Armed with Omni-Present vision, they ensure your signal dominates every timeline and feed, defeating the arch-nemesis known as "The Cringe." One-liner: "Rethinking 'Content' as 'Culture'."
+
+Card 2 — Doctor Hypnosis (Copy & Design Production)
+
+Using psionic aesthetics and telepathic headlines, this master illusionist seizes total control of the user's attention span. They battle the forces of "Boring Content," transforming dull brands into vibrant heroes with a single, mind-bending snap. One-liner: "Rethinking 'Spend' as 'Investment'."
+
+Card 3 — The Reality-Warper (Visual Production)
+
+Wielding a lens forged from pure cinematic power, they bend mundane reality into blockbuster epics that captivate the masses. Their origin story involves falling into a vat of 4K resolution, granting them the power to banish pixelation forever. One-liner: "Rethinking 'Videos' as 'Experiences'."
+
+Card 4 — The Shadow Operative (SEO)
+
+A master of stealth who lurks in the digital backend, hacking the Google Matrix while remaining completely invisible to detection. They infiltrate the highly guarded Page One, silently neutralizing competitors to secure your rightful place at the summit. One-liner: "Rethinking 'Search' as 'Answers'."
+
+Card 5 — The Cyber-Sniper (Performance Marketing)
+
+Possessing bionic aim and tactical visors locked onto ROI, they target high-value leads with zero wasted ammo on vanity metrics. This calculated anti-hero takes out inefficient ad spend with surgical precision, ensuring every shot counts. One-liner: "Rethinking 'Spend' as 'Investment'."
+
+Card 6 — Captain Aegis (Brand Management)
+
+The indestructible shield-bearer of the team, standing firm against the chaotic onslaught of internet negativity and cancel culture. They deploy their impenetrable Reputation Forcefield to deflect PR disasters, ensuring your brand's legacy remains untarnished. One-liner: "Your reputation, on a strategy."
+
+Card 7 — Websites That Convert
+
+If your site is mid, your customers are ghosting. We build aesthetic, glitch-free interfaces that pass the vibe check and secure the bag. One-liner: "More than a pretty face. A 24/7 salesperson that never sleeps."
+
+Layout
+Desktop: 3-column grid (3 cards per row, last row has 1 or 2 centered)
+Tablet: 2-column grid
+Mobile: Single column, stacked
+Each card: Black background, thin white border (rgba(255,255,255,0.1)), rounded corners, padding
+Cards have generous gap between them
+Animations
+Headline: Fades in on scroll
+Cards: Staggered entrance — cards appear one by one from bottom with 0.1s delay between each
+Card Hover:
+Card lifts up (translateY -8px)
+Orange border glow appears (box-shadow with #FF8858)
+Character name scales up slightly
+One-liner turns bright orange
+Card Click/Expand: Card expands to full width showing the complete comic description with a smooth layout animation
+Background: Subtle orange grid pattern faintly visible behind the cards
+Interactions
+Hover: Glow + lift effect
+Click: Card expands to show full description, click again to collapse
+Scroll: Cards animate in as they enter the viewport
+SECTION 5: Client Work / Case Studies
+Purpose: Social proof. Show real clients and results.
+
+Content
+Headline: "Brands That Trusted the Re-Think."
+
+6 Client Cards:
+
+Client	Industry	Description
+Casselore	F&B	We helped this premium meal subscription brand ditch the "boring diet food" aesthetic and secure the bag with a high-converting, drool-worthy visual strategy.
+MYSA	Furniture	MYSA required a digital presence that matched the prestige of their premium furniture lines. We delivered an elevated visual strategy and polished brand narrative that speaks directly to a high-end, discerning clientele.
+Namishree	Real Estate	We aligned Namishree's digital identity with their reputation as a premier developer through strategic content and sophisticated design. The result is a high-converting digital presence that effectively showcases their diverse portfolio of landmark properties.
+Mowzz	Sound & Light	Mowzz required a brand narrative as dynamic and precise as their professional sound and lighting solutions. We delivered a refined digital strategy that clearly communicates their technical excellence and industry-leading event production capabilities.
+Pooja Architect Projects	Architecture	Pooja Architect Projects required a brand narrative as structural and visionary as the physical spaces they create. We delivered a polished digital strategy that seamlessly showcases their design philosophy and establishes their authority in the architectural space.
+SUYU	Cosmetics	To visually position SUYU in the cosmetics market, we delivered a meticulously crafted product shoot. Our high-fidelity imagery highlights the premium nature of their products, creating a compelling visual narrative that drives consumer desire.
+Layout
+Desktop: Horizontal scrollable carousel OR 3x2 grid
+Tablet: 2-column grid
+Mobile: Single column stacked
+Each card: Client name (white, bold), industry tag (orange pill badge), description (dim white)
+Cards have black background with thin white border
+Animations
+Headline: Fades in on scroll
+Cards: Fade in with stagger, slight upward slide
+Card Hover:
+Card background darkens slightly
+Orange overlay slides up from bottom covering 30% of card
+Client name turns orange
+Carousel (if horizontal): Smooth drag-to-scroll with snap points
+Interactions
+Hover: Orange overlay reveal
+Click (future): Could navigate to individual case study pages
+Scroll: Cards animate in as they enter viewport
+SECTION 6: CTA — "ReSoch. Deconstruct. Rebuild. Rule."
+Purpose: Final push to convert visitors into leads.
+
+Content
+Headline: "ReSoch. Deconstruct. Rebuild. Rule."
+Each word on its own line or separated by periods
+Each word appears in orange sequentially
+Sub-headline: "Ready to Resoch your digital presence?"
+CTA Button: [Swipe Right to Match →]
+Orange background, black text
+Arrow icon on the right
+Clicking scrolls to Contact section (or opens a form modal)
+Layout
+Full-width section, centered content
+Generous vertical padding
+Background: Pure black with a subtle orange radial gradient behind the text (very faint)
+Animations
+Headline Words: Each word (ReSoch → Deconstruct → Rebuild → Rule) fades in with an orange flash effect, 0.2s stagger
+Sub-headline: Fades in after all words appear
+CTA Button: Slides up from below, has magnetic hover effect (slightly follows cursor position)
+Background Gradient: Slowly pulses in opacity
+Interactions
+CTA Hover: Magnetic effect — button subtly moves toward cursor
+CTA Click: Smooth scroll to Contact section
+Background: No interaction
+SECTION 7: Contact
+Purpose: Capture leads. Let potential clients reach out.
+
+Content
+Headline: "Let's Talk."
+Form Fields:
+Name (text input)
+Email (email input)
+Service Interested In (dropdown: Social Media, Copy & Design, Visual Production, SEO, Performance Marketing, Brand Management, Website)
+Message (textarea)
+Submit Button: [Send It →] (orange, black text)
+Side Info (on desktop, right side):
+Phone: [Your Phone Number]
+Email: [Your Email]
+"Or find us on social media" with social icons
+Layout
+Desktop: Two columns — form on left, contact info on right
+Mobile: Single column — form first, contact info below
+Form inputs: Black background, white border, white text, orange focus ring
+Submit button: Orange fill, black text
+Animations
+Section: Fades in on scroll
+Form Fields: Each field slides in from left with 0.1s stagger
+Input Focus: Border turns orange, subtle glow
+Submit Button Hover: Scales up, glow intensifies
+On Submit: Button shows loading spinner, then success message in orange
+Interactions
+Form Validation: Real-time — red border if invalid, green if valid
+Submit: Shows loading state, then "Message sent!" confirmation
+Social Icons: Turn orange on hover, open links in new tab
+COMPLETE SCROLL FLOW
+[Navbar — always visible, transparent → solid on scroll]
+        ↓
+[Hero — VIDEO background + "Don't Just Think. Re.Soch."]
+        ↓
+[About — "We love the Delete button."]
+        ↓
+[Process — Standard Way vs Re.Soch Way]
+        ↓
+[Services — Comic Character Cards (7 cards)]
+        ↓
+[Clients — Brand Case Studies (6 cards)]
+        ↓
+[CTA — "ReSoch. Deconstruct. Rebuild. Rule."]
+        ↓
+[Contact — Lead capture form]
+        ↓
+[Footer — Contact info + Social links]
+RESPONSIVE BEHAVIOR
+Feature	Desktop (>1024px)	Tablet (768-1024px)	Mobile (<768px)
+Navbar	Horizontal links	Horizontal links	Hamburger menu
+Hero	Full-screen video + centered text	Full-screen video + centered text	Full-screen video + smaller text
+About	2 columns	2 columns	1 column stacked
+Process	2 columns side by side	2 columns	1 column stacked
+Services	3-column grid	2-column grid	1 column stacked
+Clients	3-column grid or carousel	2-column grid	1 column stacked
+CTA	Centered	Centered	Centered
+Contact	2 columns (form + info)	2 columns	1 column stacked
+Footer	3 columns	3 columns	1 column stacked
+ANIMATION SUMMARY
+Animation	Trigger	Effect
+Video autoplay	Page load	Hero video plays muted in background
+Word stagger	Page load	Each word in hero fades in sequentially over video
+Typewriter	Page load	Sub-headline types out
+Scroll reveal	Scroll into view	Sections fade/slide in
+Stagger children	Scroll into view	Cards appear one by one
+Hover lift	Mouse hover	Cards lift + orange glow
+Hover underline	Mouse hover	Nav links get orange underline
+Hover scale	Mouse hover	Buttons scale up
+Magnetic button	Mouse move	CTA follows cursor slightly
+Strikethrough	Scroll into view	"Delete" gets drawn/crossed line
+Sequential words	Scroll into view	CTA words flash orange one by one
+Pulse glow	Continuous	CTA buttons have subtle orange pulse
+Expand card	Click	Service card expands to show full text
+Input focus	Click on input	Border turns orange with glow
+Form success	Submit	Button shows checkmark + success message
+COLOR USAGE MAP
+Element	Color
+Background (all sections)	#000000
+Hero video overlay	rgba(0,0,0,0.6)
+Headings	#FFFFFF
+Body text	rgba(255,255,255,0.7)
+Accent / Orange elements	#FF8858
+Borders / Dividers	rgba(255,255,255,0.1)
+Card backgrounds	#000000 with rgba(255,255,255,0.1) border
+Card hover border	#FF8858
+Button fill	#FF8858
+Button text	#000000
+Button hover glow	rgba(255,136,88,0.4)
+Input borders	rgba(255,255,255,0.2)
+Input focus border	#FF8858
+Footer top border	#FF8858
+Copyright text	rgba(255,255,255,0.5)
+VIDEO REQUIREMENTS
+Spec	Detail
+Format	.mp4 (H.264 codec)
+Placement	/public/hero-intro.mp4
+Duration	10-20 seconds (loops seamlessly)
+Resolution	1920x1080 minimum
+File size	Under 10MB for fast loading
+Audio	Muted (no audio needed)
+Fallback	Solid black background if video fails
+That's the complete updated blueprint with the video intro in the hero banner. The only change from the previous version is Section 1 (Hero) — now featuring a full-screen background video with a dark overlay, with all text and animations layered on top.

@@ -1,0 +1,17 @@
+
+> @workspace/mockup-sandbox@2.0.0 dev C:\Users\saipr\Downloads\Visual-Showcase-Builder\Visual-Showcase-Builder\artifacts\mockup-sandbox
+> vite dev
+
+[31mfailed to load config from C:\Users\saipr\Downloads\Visual-Showcase-Builder\Visual-Showcase-Builder\artifacts\mockup-sandbox\vite.config.ts[39m
+[31merror when starting dev server:
+Error: PORT environment variable is required but was not provided.
+    at file:///C:/Users/saipr/Downloads/Visual-Showcase-Builder/Visual-Showcase-Builder/artifacts/mockup-sandbox/node_modules/.vite-temp/vite.config.ts.timestamp-1775464374583-0c196cd39e6f4.mjs:145:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+    at async loadConfigFromBundledFile (file:///C:/Users/saipr/Downloads/Visual-Showcase-Builder/Visual-Showcase-Builder/node_modules/.pnpm/vite@7.3.1_@types+node@25.5_563e53ad8e312ec79776b617d5f0e213/node_modules/vite/dist/node/chunks/config.js:35909:12)
+    at async bundleAndLoadConfigFile (file:///C:/Users/saipr/Downloads/Visual-Showcase-Builder/Visual-Showcase-Builder/node_modules/.pnpm/vite@7.3.1_@types+node@25.5_563e53ad8e312ec79776b617d5f0e213/node_modules/vite/dist/node/chunks/config.js:35797:17)
+    at async loadConfigFromFile (file:///C:/Users/saipr/Downloads/Visual-Showcase-Builder/Visual-Showcase-Builder/node_modules/.pnpm/vite@7.3.1_@types+node@25.5_563e53ad8e312ec79776b617d5f0e213/node_modules/vite/dist/node/chunks/config.js:35764:42)
+    at async resolveConfig (file:///C:/Users/saipr/Downloads/Visual-Showcase-Builder/Visual-Showcase-Builder/node_modules/.pnpm/vite@7.3.1_@types+node@25.5_563e53ad8e312ec79776b617d5f0e213/node_modules/vite/dist/node/chunks/config.js:35413:22)
+    at async _createServer (file:///C:/Users/saipr/Downloads/Visual-Showcase-Builder/Visual-Showcase-Builder/node_modules/.pnpm/vite@7.3.1_@types+node@25.5_563e53ad8e312ec79776b617d5f0e213/node_modules/vite/dist/node/chunks/config.js:25362:67)
+    at async CAC.<anonymous> (file:///C:/Users/saipr/Downloads/Visual-Showcase-Builder/Visual-Showcase-Builder/node_modules/.pnpm/vite@7.3.1_@types+node@25.5_563e53ad8e312ec79776b617d5f0e213/node_modules/vite/dist/node/cli.js:572:18)[39m
+ ELIFECYCLE  Command failed with exit code 1.

@@ -1,0 +1,91 @@
+uploads = []
+
+[[generated]]
+id = "favM2c1vym142iNcbHIdM"
+uri = "file://artifacts/resoch-digitals/public/images/team/trend-surfer.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "UKtB_IDP6m_5IwlWu2tC7"
+uri = "file://artifacts/resoch-digitals/public/images/team/doctor-hypnosis.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "vIgQI6WOa2ESfIsP1tRjQ"
+uri = "file://artifacts/resoch-digitals/public/images/team/reality-warper.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "_v4_mAW5Hsbc1kaLU8ok2"
+uri = "file://artifacts/resoch-digitals/public/images/team/shadow-operative.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "huukJkVVoGg8XbVommKR1"
+uri = "file://artifacts/resoch-digitals/public/images/team/cyber-sniper.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Udz9IMUB_5ePsA269HqAN"
+uri = "file://artifacts/resoch-digitals/public/images/team/captain-aegis.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "VqsxkOSjr7HmOBGirBtPD"
+uri = "file://artifacts/resoch-digitals/public/images/team/web-developer.png"
+type = "image"
+title = "generated_image"
+
+[[outputs]]
+id = "3KiTWMRQP70cRhM4e7vUn"
+uri = "file://artifacts/resoch-digitals/public/images/about.jpg"
+type = "image"
+title = "creative team brainstorming agency"
+
+[[outputs]]
+id = "SvItF_qiv00UTaJsqU1me"
+uri = "file://artifacts/resoch-digitals/public/images/client-1.jpg"
+type = "image"
+title = "modern restaurant food delivery"
+
+[[outputs]]
+id = "m7gBu43_x3wJ3yot1KivV"
+uri = "file://artifacts/resoch-digitals/public/images/client-2.jpg"
+type = "image"
+title = "premium furniture interior design"
+
+[[outputs]]
+id = "zl3o6OKvMI4KaHBdMtwfO"
+uri = "file://artifacts/resoch-digitals/public/images/client-3.jpg"
+type = "image"
+title = "luxury real estate architecture"
+
+[[outputs]]
+id = "DEN5-HUrPVNkoIl5hm7Cn"
+uri = "file://artifacts/resoch-digitals/public/images/client-4.jpg"
+type = "image"
+title = "professional sound lighting event"
+
+[[outputs]]
+id = "go8xXeUMnP_i-7qQiTU8o"
+uri = "file://artifacts/resoch-digitals/public/images/client-5.jpg"
+type = "image"
+title = "architectural design project"
+
+[[outputs]]
+id = "iIYEAj5YQ-jiAmTihGnqC"
+uri = "file://artifacts/resoch-digitals/public/images/client-6.jpg"
+type = "image"
+title = "cosmetics beauty product luxury"
+
+[[outputs]]
+id = "wN-Q6MmDRgPw4Fyw23BFa"
+uri = "file://artifacts/resoch-digitals/public/images/hero-bg.jpg"
+type = "image"
+title = "abstract digital marketing creative agency"
